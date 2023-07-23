@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Minimal yet powerful APIs',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/gears.svg').default,
     description: (
       <>
         Terrarioはできる限り動作を予測しやすく、かつ動作が重複しているAPIが少なくなるように設計されています。
@@ -16,7 +16,7 @@ const FeatureList = [
   },
   {
     title: 'Scannerless parsing',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/barcode.svg').default,
     description: (
       <>
         パーサーには直接入力文字列を入力します。パーサーの前段にスキャナー(トークナイザー)を作成する必要がないため、
@@ -26,7 +26,7 @@ const FeatureList = [
   },
   {
     title: 'Supports conditional control by state',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/flow.svg').default,
     description: (
       <>
         state変数の値によってパーサーの処理を分岐させる機能がサポートされています。
@@ -36,7 +36,7 @@ const FeatureList = [
   },
   {
     title: 'Zero dependency',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/package.svg').default,
     description: (
       <>
         Terrarioには依存するパッケージがありません。プロジェクトの依存関係をクリーンに保つことができます。

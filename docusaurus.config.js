@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Terrario',
   tagline: 'A refined, expressive parser combinator library.',
-  favicon: 'img/terrario-logo.svg',
+  favicon: 'img/logo.svg',
 
   // Set the production url of your site here
   url: 'https://terrario-js.github.io/',
@@ -60,7 +60,7 @@ const config = {
         title: 'Terrario',
         logo: {
           alt: 'Terrario Logo',
-          src: 'img/terrario-logo.svg',
+          src: 'img/logo.svg',
         },
         items: [
           {
