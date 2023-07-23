@@ -25,12 +25,12 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Supports conditional control by state',
+    title: 'Support branch control by state',
     Svg: require('@site/static/img/flow.svg').default,
     description: (
       <>
         state変数の値によってパーサーの処理を分岐させる機能がサポートされています。
-        これにより、より複雑な構文の解析が可能になります。
+        より複雑な構文の解析が可能になります。
       </>
     ),
   },
