@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[622],{6747:e=>{e.exports=JSON.parse('{"title":"API","description":"Terrario API Docs","slug":"/category/api","permalink":"/docs/category/api","navigation":{"previous":{"title":"Getting Started","permalink":"/docs/getting-started"},"next":{"title":"Classes","permalink":"/docs/category/classes"}}}')}}]);
