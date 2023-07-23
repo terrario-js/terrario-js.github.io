@@ -1,5 +1,7 @@
 # Class: `Parser<T>`
 
+Parser class
+
 ## Type parameters
 
 | Name |
@@ -36,6 +38,8 @@
 
 • **new Parser**<`T`\>(`opts`)
 
+Parser constructor
+
 #### Type parameters
 
 | Name |
@@ -50,9 +54,11 @@
 
 #### Defined in
 
-[index.ts:33](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L33)
+[index.ts:68](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L68)
 
 • **new Parser**<`T`\>(`opts`)
+
+Parser constructor
 
 #### Type parameters
 
@@ -68,7 +74,7 @@
 
 #### Defined in
 
-[index.ts:34](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L34)
+[index.ts:74](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L74)
 
 ## Properties
 
@@ -78,7 +84,7 @@
 
 #### Defined in
 
-[index.ts:31](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L31)
+[index.ts:61](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L61)
 
 ___
 
@@ -88,7 +94,7 @@ ___
 
 #### Defined in
 
-[index.ts:30](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L30)
+[index.ts:60](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L60)
 
 ## Methods
 
@@ -96,19 +102,23 @@ ___
 
 ▸ **_evalContext**(): [`ParserContext`](../modules.md#parsercontext)<`T`\>
 
+Evaluate the lazy context.
+
 #### Returns
 
 [`ParserContext`](../modules.md#parsercontext)<`T`\>
 
 #### Defined in
 
-[index.ts:50](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L50)
+[index.ts:92](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L92)
 
 ___
 
 ### exec
 
 ▸ **exec**(`input`, `state?`, `offset?`): [`Result`](../modules.md#result)<`T`\>
+
+Execute a child parser in the parser.
 
 #### Parameters
 
@@ -124,13 +134,15 @@ ___
 
 #### Defined in
 
-[index.ts:62](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L62)
+[index.ts:109](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L109)
 
 ___
 
 ### find
 
 ▸ **find**(`input`, `state?`): `undefined` \| { `index`: `number` ; `input`: `string` ; `result`: [`Result`](../modules.md#result)<`T`\>  }
+
+Find a pattern from the input string.
 
 #### Parameters
 
@@ -145,13 +157,15 @@ ___
 
 #### Defined in
 
-[index.ts:72](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L72)
+[index.ts:129](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L129)
 
 ___
 
 ### findAll
 
 ▸ **findAll**(`input`, `state?`): { `index`: `number` ; `input`: `string` ; `result`: [`Result`](../modules.md#result)<`T`\>  }[]
+
+Find all patterns from the input string.
 
 #### Parameters
 
@@ -166,13 +180,15 @@ ___
 
 #### Defined in
 
-[index.ts:83](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L83)
+[index.ts:145](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L145)
 
 ___
 
 ### many
 
 ▸ **many**(`min?`, `max?`): [`Parser`](Parser.md)<`T`[]\>
+
+many
 
 #### Parameters
 
@@ -187,9 +203,11 @@ ___
 
 #### Defined in
 
-[index.ts:116](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L116)
+[index.ts:193](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L193)
 
 ▸ **many**(`opts`): [`Parser`](Parser.md)<`T`[]\>
+
+many
 
 #### Parameters
 
@@ -206,13 +224,15 @@ ___
 
 #### Defined in
 
-[index.ts:117](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L117)
+[index.ts:199](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L199)
 
 ___
 
 ### map
 
 ▸ **map**<`U`\>(`fn`): [`Parser`](Parser.md)<`U`\>
+
+map
 
 #### Type parameters
 
@@ -232,7 +252,7 @@ ___
 
 #### Defined in
 
-[index.ts:95](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L95)
+[index.ts:162](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L162)
 
 ___
 
@@ -240,19 +260,23 @@ ___
 
 ▸ **option**(): [`Parser`](Parser.md)<``null`` \| `T`\>
 
+option
+
 #### Returns
 
 [`Parser`](Parser.md)<``null`` \| `T`\>
 
 #### Defined in
 
-[index.ts:128](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L128)
+[index.ts:215](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L215)
 
 ___
 
 ### parse
 
 ▸ **parse**(`input`, `state?`): [`Result`](../modules.md#result)<`T`\>
+
+Parse an input string.
 
 #### Parameters
 
@@ -267,13 +291,15 @@ ___
 
 #### Defined in
 
-[index.ts:67](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L67)
+[index.ts:119](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L119)
 
 ___
 
 ### state
 
 ▸ **state**(`key`, `value`): [`Parser`](Parser.md)<`T`\>
+
+state
 
 #### Parameters
 
@@ -288,7 +314,7 @@ ___
 
 #### Defined in
 
-[index.ts:135](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L135)
+[index.ts:227](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L227)
 
 ___
 
@@ -296,10 +322,12 @@ ___
 
 ▸ **text**(): [`Parser`](Parser.md)<`string`\>
 
+text
+
 #### Returns
 
 [`Parser`](Parser.md)<`string`\>
 
 #### Defined in
 
-[index.ts:105](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L105)
+[index.ts:177](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L177)

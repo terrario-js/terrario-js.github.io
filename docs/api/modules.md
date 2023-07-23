@@ -47,13 +47,13 @@ Terrario modules.
 - [succeeded](modules.md#succeeded)
 - [success](modules.md#success-1)
 
-
-
 ## Type Aliases
 
 ### Failure
 
 Ƭ **Failure**: `Object`
+
+Failure result type
 
 #### Type declaration
 
@@ -64,7 +64,7 @@ Terrario modules.
 
 #### Defined in
 
-[index.ts:15](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L15)
+[index.ts:30](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L30)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[index.ts:167](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L167)
+[index.ts:276](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L276)
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-[index.ts:153](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L153)
+[index.ts:251](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L251)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[index.ts:162](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L162)
+[index.ts:268](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L268)
 
 ___
 
@@ -154,6 +154,8 @@ ___
 
 ▸ (`input`, `index`, `children`, `state`): [`Result`](modules.md#result)<`T`\>
 
+Parser handler function
+
 ##### Parameters
 
 | Name | Type |
@@ -169,7 +171,7 @@ ___
 
 #### Defined in
 
-[index.ts:160](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L160)
+[index.ts:263](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L263)
 
 ___
 
@@ -177,6 +179,8 @@ ___
 
 Ƭ **Result**<`T`\>: [`Success`](modules.md#success)<`T`\> \| [`Failure`](modules.md#failure)
 
+Parser result
+
 #### Type parameters
 
 | Name |
@@ -185,7 +189,7 @@ ___
 
 #### Defined in
 
-[index.ts:27](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L27)
+[index.ts:52](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L52)
 
 ___
 
@@ -193,6 +197,8 @@ ___
 
 Ƭ **ResultType**<`T`\>: `T` extends [`Parser`](classes/Parser.md)<infer R\> ? `R` : `never`
 
+Get result type of Parser.
+
 #### Type parameters
 
 | Name |
@@ -201,7 +207,7 @@ ___
 
 #### Defined in
 
-[index.ts:170](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L170)
+[index.ts:284](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L284)
 
 ___
 
@@ -209,6 +215,8 @@ ___
 
 Ƭ **ResultTypes**<`T`\>: `T` extends [infer Head, ...(infer Tail)] ? [[`ResultType`](modules.md#resulttype)<`Head`\>, ...ResultTypes<Tail\>] : []
 
+Get result types of Parsers.
+
 #### Type parameters
 
 | Name |
@@ -217,7 +225,7 @@ ___
 
 #### Defined in
 
-[index.ts:171](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L171)
+[index.ts:291](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L291)
 
 ___
 
@@ -242,13 +250,15 @@ ___
 
 #### Defined in
 
-[index.ts:146](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L146)
+[index.ts:241](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L241)
 
 ___
 
 ### Success
 
 Ƭ **Success**<`T`\>: `Object`
+
+Success result type
 
 #### Type parameters
 
@@ -266,7 +276,7 @@ ___
 
 #### Defined in
 
-[index.ts:1](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L1)
+[index.ts:6](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L6)
 
 ## Variables
 
@@ -274,9 +284,11 @@ ___
 
 • `Const` **char**: [`Parser`](classes/Parser.md)<`string`\>
 
+char
+
 #### Defined in
 
-[index.ts:349](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L349)
+[index.ts:545](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L545)
 
 ___
 
@@ -286,7 +298,7 @@ ___
 
 #### Defined in
 
-[index.ts:332](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L332)
+[index.ts:507](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L507)
 
 ___
 
@@ -296,7 +308,7 @@ ___
 
 #### Defined in
 
-[index.ts:334](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L334)
+[index.ts:509](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L509)
 
 ___
 
@@ -304,9 +316,11 @@ ___
 
 • `Const` **eof**: [`Parser`](classes/Parser.md)<``null``\>
 
+eof
+
 #### Defined in
 
-[index.ts:343](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L343)
+[index.ts:534](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L534)
 
 ___
 
@@ -316,7 +330,7 @@ ___
 
 #### Defined in
 
-[index.ts:333](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L333)
+[index.ts:508](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L508)
 
 ___
 
@@ -324,9 +338,11 @@ ___
 
 • `Const` **lineBegin**: [`Parser`](classes/Parser.md)<``null``\>
 
+lineBegin
+
 #### Defined in
 
-[index.ts:357](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L357)
+[index.ts:558](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L558)
 
 ___
 
@@ -334,9 +350,11 @@ ___
 
 • `Const` **lineEnd**: [`Parser`](classes/Parser.md)<``null``\>
 
+lineEnd
+
 #### Defined in
 
-[index.ts:370](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L370)
+[index.ts:576](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L576)
 
 ___
 
@@ -344,9 +362,11 @@ ___
 
 • `Const` **newline**: [`Parser`](classes/Parser.md)<``"\r"`` \| ``"\n"`` \| ``"\r\n"``\>
 
+newline
+
 #### Defined in
 
-[index.ts:335](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L335)
+[index.ts:516](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L516)
 
 ___
 
@@ -354,15 +374,19 @@ ___
 
 • `Const` **sof**: [`Parser`](classes/Parser.md)<``null``\>
 
+sof
+
 #### Defined in
 
-[index.ts:337](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L337)
+[index.ts:523](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L523)
 
 ## Functions
 
 ### alt
 
 ▸ **alt**<`T`\>(`parsers`): [`Parser`](classes/Parser.md)<[`ResultTypes`](modules.md#resulttypes)<`T`\>[`number`]\>
+
+alt
 
 #### Type parameters
 
@@ -382,13 +406,15 @@ ___
 
 #### Defined in
 
-[index.ts:278](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L278)
+[index.ts:423](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L423)
 
 ___
 
 ### cond
 
 ▸ **cond**(`predicate`): [`Parser`](classes/Parser.md)<``null``\>
+
+cond
 
 #### Parameters
 
@@ -402,13 +428,15 @@ ___
 
 #### Defined in
 
-[index.ts:324](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L324)
+[index.ts:499](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L499)
 
 ___
 
 ### failure
 
 ▸ **failure**(`index`): [`Failure`](modules.md#failure)
+
+Make a failure result.
 
 #### Parameters
 
@@ -422,13 +450,15 @@ ___
 
 #### Defined in
 
-[index.ts:20](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L20)
+[index.ts:40](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L40)
 
 ___
 
 ### language
 
 ▸ **language**<`T`\>(`syntaxes`): `T`
+
+language
 
 #### Type parameters
 
@@ -448,13 +478,15 @@ ___
 
 #### Defined in
 
-[index.ts:377](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L377)
+[index.ts:587](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L587)
 
 ___
 
 ### lazy
 
 ▸ **lazy**<`T`\>(`fn`, `name?`): [`Parser`](classes/Parser.md)<`T`\>
+
+lazy
 
 #### Type parameters
 
@@ -475,13 +507,15 @@ ___
 
 #### Defined in
 
-[index.ts:296](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L296)
+[index.ts:451](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L451)
 
 ___
 
 ### match
 
 ▸ **match**<`T`\>(`parser`): [`Parser`](classes/Parser.md)<`T`\>
+
+match
 
 #### Type parameters
 
@@ -501,13 +535,15 @@ ___
 
 #### Defined in
 
-[index.ts:306](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L306)
+[index.ts:471](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L471)
 
 ___
 
 ### notMatch
 
 ▸ **notMatch**(`parser`): [`Parser`](classes/Parser.md)<``null``\>
+
+notMatch
 
 #### Parameters
 
@@ -521,13 +557,15 @@ ___
 
 #### Defined in
 
-[index.ts:315](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L315)
+[index.ts:485](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L485)
 
 ___
 
 ### parser
 
 ▸ **parser**<`T`\>(`handler`, `children?`, `name?`): [`Parser`](classes/Parser.md)<`T`\>
+
+parser
 
 #### Type parameters
 
@@ -549,13 +587,15 @@ ___
 
 #### Defined in
 
-[index.ts:291](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L291)
+[index.ts:441](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L441)
 
 ___
 
 ### seq
 
 ▸ **seq**<`T`\>(`parsers`): [`Parser`](classes/Parser.md)<[`ResultTypes`](modules.md#resulttypes)<[...T]\>\>
+
+seq
 
 #### Type parameters
 
@@ -575,9 +615,11 @@ ___
 
 #### Defined in
 
-[index.ts:251](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L251)
+[index.ts:386](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L386)
 
 ▸ **seq**<`T`, `U`\>(`parsers`, `select`): `T`[`U`]
+
+seq
 
 #### Type parameters
 
@@ -599,13 +641,15 @@ ___
 
 #### Defined in
 
-[index.ts:252](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L252)
+[index.ts:392](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L392)
 
 ___
 
 ### str
 
 ▸ **str**<`T`\>(`value`): [`Parser`](classes/Parser.md)<`T`\>
+
+str
 
 #### Type parameters
 
@@ -625,9 +669,11 @@ ___
 
 #### Defined in
 
-[index.ts:221](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L221)
+[index.ts:346](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L346)
 
 ▸ **str**(`pattern`): [`Parser`](classes/Parser.md)<`string`\>
+
+str
 
 #### Parameters
 
@@ -641,13 +687,15 @@ ___
 
 #### Defined in
 
-[index.ts:222](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L222)
+[index.ts:352](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L352)
 
 ___
 
 ### succeeded
 
 ▸ **succeeded**<`T`\>(`value`): [`Parser`](classes/Parser.md)<`T`\>
+
+succeeded
 
 #### Type parameters
 
@@ -667,13 +715,15 @@ ___
 
 #### Defined in
 
-[index.ts:300](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L300)
+[index.ts:460](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L460)
 
 ___
 
 ### success
 
 ▸ **success**<`T`\>(`index`, `value`): [`Success`](modules.md#success)<`T`\>
+
+Make a success result.
 
 #### Type parameters
 
@@ -694,4 +744,4 @@ ___
 
 #### Defined in
 
-[index.ts:7](https://github.com/terrario-js/terrario/blob/3f6eafd/src/index.ts#L7)
+[index.ts:17](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L17)
