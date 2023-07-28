@@ -44,6 +44,7 @@ const config = {
           editUrl:
             'https://github.com/terrario-js/terrario-js.github.io/tree/main/',
         },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
