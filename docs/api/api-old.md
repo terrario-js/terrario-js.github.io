@@ -1,4 +1,10 @@
+---
+sidebar_position: 3
+---
+
 # API Docs (old page)
+
+Terrario v0.9.0
 
 # Basic APIs
 
