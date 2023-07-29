@@ -1,4 +1,4 @@
-# Class: `Parser<T>`
+# Class: Parser\<U>
 
 Parser class
 
@@ -6,7 +6,7 @@ Parser class
 
 | Name |
 | :------ |
-| `T` |
+| `U` |
 
 ## Table of contents
 
@@ -36,7 +36,7 @@ Parser class
 
 ### constructor
 
-• **new Parser**<`T`\>(`opts`)
+• **new Parser**<`U`\>(`opts`)
 
 Parser constructor
 
@@ -44,47 +44,47 @@ Parser constructor
 
 | Name |
 | :------ |
-| `T` |
+| `U` |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `opts` | [`StrictParserOpts`](../modules.md#strictparseropts)<`T`\> |
+| `opts` | [`StrictParserOpts`](../modules.md#strictparseropts)<`U`\> |
 
 #### Defined in
 
-[index.ts:68](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L68)
+[index.ts:68](https://github.com/marihachi/terrario/blob/c351ede/src/index.ts#L68)
 
-• **new Parser**<`T`\>(`opts`)
+• **new Parser**<`U`\>(`opts`)
 
-Parser constructor
+Parser constructor (Lazy parser)
 
 #### Type parameters
 
 | Name |
 | :------ |
-| `T` |
+| `U` |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `opts` | [`LazyParserOpts`](../modules.md#lazyparseropts)<`T`\> |
+| `opts` | [`LazyParserOpts`](../modules.md#lazyparseropts)<`U`\> |
 
 #### Defined in
 
-[index.ts:74](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L74)
+[index.ts:74](https://github.com/marihachi/terrario/blob/c351ede/src/index.ts#L74)
 
 ## Properties
 
 ### ctx
 
-• **ctx**: [`ParserContext`](../modules.md#parsercontext)<`T`\> \| [`LazyContext`](../modules.md#lazycontext)<`T`\>
+• **ctx**: [`ParserContext`](../modules.md#parsercontext)<`U`\> \| [`LazyContext`](../modules.md#lazycontext)<`U`\>
 
 #### Defined in
 
-[index.ts:61](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L61)
+[index.ts:61](https://github.com/marihachi/terrario/blob/c351ede/src/index.ts#L61)
 
 ___
 
@@ -94,31 +94,31 @@ ___
 
 #### Defined in
 
-[index.ts:60](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L60)
+[index.ts:60](https://github.com/marihachi/terrario/blob/c351ede/src/index.ts#L60)
 
 ## Methods
 
 ### \_evalContext
 
-▸ **_evalContext**(): [`ParserContext`](../modules.md#parsercontext)<`T`\>
+▸ **_evalContext**(): [`ParserContext`](../modules.md#parsercontext)<`U`\>
 
 Evaluate the lazy context.
 
 #### Returns
 
-[`ParserContext`](../modules.md#parsercontext)<`T`\>
+[`ParserContext`](../modules.md#parsercontext)<`U`\>
 
 #### Defined in
 
-[index.ts:92](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L92)
+[index.ts:92](https://github.com/marihachi/terrario/blob/c351ede/src/index.ts#L92)
 
 ___
 
 ### exec
 
-▸ **exec**(`input`, `state?`, `offset?`): [`Result`](../modules.md#result)<`T`\>
+▸ **exec**(`input`, `state?`, `offset?`): [`Result`](../modules.md#result)<`U`\>
 
-Execute a child parser in the parser.
+Execute the parser handler.
 
 #### Parameters
 
@@ -130,17 +130,17 @@ Execute a child parser in the parser.
 
 #### Returns
 
-[`Result`](../modules.md#result)<`T`\>
+[`Result`](../modules.md#result)<`U`\>
 
 #### Defined in
 
-[index.ts:109](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L109)
+[index.ts:109](https://github.com/marihachi/terrario/blob/c351ede/src/index.ts#L109)
 
 ___
 
 ### find
 
-▸ **find**(`input`, `state?`): `undefined` \| { `index`: `number` ; `input`: `string` ; `result`: [`Result`](../modules.md#result)<`T`\>  }
+▸ **find**(`input`, `state?`): `undefined` \| { `index`: `number` ; `input`: `string` ; `result`: [`Result`](../modules.md#result)<`U`\>  }
 
 Find a pattern from the input string.
 
@@ -153,17 +153,17 @@ Find a pattern from the input string.
 
 #### Returns
 
-`undefined` \| { `index`: `number` ; `input`: `string` ; `result`: [`Result`](../modules.md#result)<`T`\>  }
+`undefined` \| { `index`: `number` ; `input`: `string` ; `result`: [`Result`](../modules.md#result)<`U`\>  }
 
 #### Defined in
 
-[index.ts:129](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L129)
+[index.ts:129](https://github.com/marihachi/terrario/blob/c351ede/src/index.ts#L129)
 
 ___
 
 ### findAll
 
-▸ **findAll**(`input`, `state?`): { `index`: `number` ; `input`: `string` ; `result`: [`Result`](../modules.md#result)<`T`\>  }[]
+▸ **findAll**(`input`, `state?`): { `index`: `number` ; `input`: `string` ; `result`: [`Result`](../modules.md#result)<`U`\>  }[]
 
 Find all patterns from the input string.
 
@@ -176,19 +176,19 @@ Find all patterns from the input string.
 
 #### Returns
 
-{ `index`: `number` ; `input`: `string` ; `result`: [`Result`](../modules.md#result)<`T`\>  }[]
+{ `index`: `number` ; `input`: `string` ; `result`: [`Result`](../modules.md#result)<`U`\>  }[]
 
 #### Defined in
 
-[index.ts:145](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L145)
+[index.ts:145](https://github.com/marihachi/terrario/blob/c351ede/src/index.ts#L145)
 
 ___
 
 ### many
 
-▸ **many**(`min?`, `max?`): [`Parser`](Parser.md)<`T`[]\>
+▸ **many**(`min?`, `max?`): [`Parser`](Parser.md)<`U`[]\>
 
-many
+Create a new parser that tries to apply the parser iteratively.
 
 #### Parameters
 
@@ -199,15 +199,15 @@ many
 
 #### Returns
 
-[`Parser`](Parser.md)<`T`[]\>
+[`Parser`](Parser.md)<`U`[]\>
 
 #### Defined in
 
-[index.ts:193](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L193)
+[index.ts:195](https://github.com/marihachi/terrario/blob/c351ede/src/index.ts#L195)
 
-▸ **many**(`opts`): [`Parser`](Parser.md)<`T`[]\>
+▸ **many**(`opts`): [`Parser`](Parser.md)<`U`[]\>
 
-many
+Create a new parser that tries to apply the parser iteratively.
 
 #### Parameters
 
@@ -220,61 +220,64 @@ many
 
 #### Returns
 
-[`Parser`](Parser.md)<`T`[]\>
+[`Parser`](Parser.md)<`U`[]\>
 
 #### Defined in
 
-[index.ts:199](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L199)
+[index.ts:201](https://github.com/marihachi/terrario/blob/c351ede/src/index.ts#L201)
 
 ___
 
 ### map
 
-▸ **map**<`U`\>(`fn`): [`Parser`](Parser.md)<`U`\>
+▸ **map**<`V`\>(`fn`): [`Parser`](Parser.md)<`V`\>
 
-map
+Create a new parser that wraps the current parser.
+The generated parser maps the result of the inner parser and returns it as a result.
 
 #### Type parameters
 
 | Name |
 | :------ |
-| `U` |
+| `V` |
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `fn` | (`value`: `T`) => `U` |
+| `fn` | (`value`: `U`) => `V` |
 
 #### Returns
 
-[`Parser`](Parser.md)<`U`\>
+[`Parser`](Parser.md)<`V`\>
 
 #### Defined in
 
-[index.ts:162](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L162)
+[index.ts:163](https://github.com/marihachi/terrario/blob/c351ede/src/index.ts#L163)
 
 ___
 
 ### option
 
-▸ **option**(): [`Parser`](Parser.md)<``null`` \| `T`\>
+▸ **option**(): [`Parser`](Parser.md)<``null`` \| `U`\>
 
-option
+Create a new parser that wraps the current parser.
+The generated parser returns success regardless of whether the inner parser successfully matched.
+If the inner parser fails, a null value is returned.
 
 #### Returns
 
-[`Parser`](Parser.md)<``null`` \| `T`\>
+[`Parser`](Parser.md)<``null`` \| `U`\>
 
 #### Defined in
 
-[index.ts:215](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L215)
+[index.ts:219](https://github.com/marihachi/terrario/blob/c351ede/src/index.ts#L219)
 
 ___
 
 ### parse
 
-▸ **parse**(`input`, `state?`): [`Result`](../modules.md#result)<`T`\>
+▸ **parse**(`input`, `state?`): [`Result`](../modules.md#result)<`U`\>
 
 Parse an input string.
 
@@ -287,19 +290,22 @@ Parse an input string.
 
 #### Returns
 
-[`Result`](../modules.md#result)<`T`\>
+[`Result`](../modules.md#result)<`U`\>
 
 #### Defined in
 
-[index.ts:119](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L119)
+[index.ts:119](https://github.com/marihachi/terrario/blob/c351ede/src/index.ts#L119)
 
 ___
 
 ### state
 
-▸ **state**(`key`, `value`): [`Parser`](Parser.md)<`T`\>
+▸ **state**(`key`, `value`): [`Parser`](Parser.md)<`U`\>
 
-state
+Create a new parser that wraps the current parser.
+The generated parser will set the value of the state variable from the given set function and
+run the inner parser. When the inner parser finishes executing, it restores the value of the
+state variable.
 
 #### Parameters
 
@@ -310,11 +316,11 @@ state
 
 #### Returns
 
-[`Parser`](Parser.md)<`T`\>
+[`Parser`](Parser.md)<`U`\>
 
 #### Defined in
 
-[index.ts:227](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L227)
+[index.ts:234](https://github.com/marihachi/terrario/blob/c351ede/src/index.ts#L234)
 
 ___
 
@@ -322,7 +328,8 @@ ___
 
 ▸ **text**(): [`Parser`](Parser.md)<`string`\>
 
-text
+Create a new parser that wraps the current parser.
+The generated parser will return the text in the range matched by the inner parser.
 
 #### Returns
 
@@ -330,4 +337,4 @@ text
 
 #### Defined in
 
-[index.ts:177](https://github.com/marihachi/terrario/blob/89c406f/src/index.ts#L177)
+[index.ts:179](https://github.com/marihachi/terrario/blob/c351ede/src/index.ts#L179)
