@@ -1,4 +1,4 @@
-# Class: Parser\<U>
+# Class: `Parser<U>`
 
 Parser class
 
