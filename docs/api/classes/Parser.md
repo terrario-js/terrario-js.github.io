@@ -8,30 +8,6 @@ Parser class
 | :------ |
 | `U` |
 
-## Table of contents
-
-### Constructors
-
-- [constructor](Parser.md#constructor)
-
-### Properties
-
-- [ctx](Parser.md#ctx)
-- [name](Parser.md#name)
-
-### Methods
-
-- [\_evalContext](Parser.md#_evalcontext)
-- [exec](Parser.md#exec)
-- [find](Parser.md#find)
-- [findAll](Parser.md#findall)
-- [many](Parser.md#many)
-- [map](Parser.md#map)
-- [option](Parser.md#option)
-- [parse](Parser.md#parse)
-- [state](Parser.md#state)
-- [text](Parser.md#text)
-
 ## Constructors
 
 ### constructor

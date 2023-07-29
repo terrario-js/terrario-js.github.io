@@ -1,51 +1,5 @@
 # Modules
 
-## Table of contents
-
-### Classes
-
-- [Parser](classes/Parser.md)
-
-### Type Aliases
-
-- [Failure](modules.md#failure)
-- [LazyContext](modules.md#lazycontext)
-- [LazyParserOpts](modules.md#lazyparseropts)
-- [ParserContext](modules.md#parsercontext)
-- [ParserHandler](modules.md#parserhandler)
-- [Result](modules.md#result)
-- [ResultType](modules.md#resulttype)
-- [ResultTypes](modules.md#resulttypes)
-- [StrictParserOpts](modules.md#strictparseropts)
-- [Success](modules.md#success)
-
-### Variables
-
-- [char](modules.md#char)
-- [cr](modules.md#cr)
-- [crlf](modules.md#crlf)
-- [eof](modules.md#eof)
-- [lf](modules.md#lf)
-- [lineBegin](modules.md#linebegin)
-- [lineEnd](modules.md#lineend)
-- [newline](modules.md#newline)
-- [sof](modules.md#sof)
-
-### Functions
-
-- [alt](modules.md#alt)
-- [failure](modules.md#failure-1)
-- [language](modules.md#language)
-- [lazy](modules.md#lazy)
-- [match](modules.md#match)
-- [notMatch](modules.md#notmatch)
-- [parser](modules.md#parser)
-- [seq](modules.md#seq)
-- [str](modules.md#str)
-- [succeeded](modules.md#succeeded)
-- [success](modules.md#success-1)
-- [where](modules.md#where)
-
 ## Type Aliases
 
 ### Failure
