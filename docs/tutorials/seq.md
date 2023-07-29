@@ -13,7 +13,7 @@ import * as T from 'terrario';
 
 const parser = T.seq([
   T.str('#'),
-  T.any.many(),
+  T.char.many(),
 ]);
 ```
 このパーサーは最初に`#`にマッチすることが確認されると、続いて任意の文字列にマッチすることを確認します。
