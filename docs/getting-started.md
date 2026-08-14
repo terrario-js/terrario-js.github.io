@@ -22,15 +22,23 @@ TerrarioはTypeScriptとJavaScriptの両方をサポートしています。
 以下の内容を記述してindex.jsという名前で保存してください。今回はJavaScriptで記述しています。
 
 ```js
-const T = require('terrario');
+import * as T from 'terrario';
 
 const number = T.seq([
   T.token(/[1-9]/),
   T.token(/[0-9]/).many(0),
-]).text().map(x => {
+]).span().map(x => {
   return parseInt(x);
 });
-const parser = T.sep(number, T.token(','));
+
+// separate with ","
+const parser = T.seq([
+  number,
+  T.seq([
+    T.token(','),
+    number
+  ], 1).many(),
+]).map(x => [x[0], ...x[1]]);
 
 console.log(parser.parse('123,456'));
 console.log(parser.parse('222'));
@@ -40,6 +48,7 @@ console.log(parser.parse('aaa'));
 このプログラムでは、いくつかのコンビネータと呼ばれる関数が使用されています。
 コンビネータは引数の内容に応じて新しいパーサーを生成します。
 - `T.seq`はパーサーの配列を受け取って、それらを順番に適用するパーサーを生成します。指定した順番通りに入力文字列を消費できた場合にのみ、そのパーサーは成功したとみなされます。  
+- `T.seq`の第2引数は、第1引数のどのパース結果を`T.seq`が返すかを指定します。第2引数は省略可能ですが、その場合は全てのパース結果が配列として返されます。
 
 ## パーサーを実行してみる
 
