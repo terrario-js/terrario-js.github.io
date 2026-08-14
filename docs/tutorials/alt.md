@@ -14,7 +14,7 @@ sidebar_position: 5
 import * as T from 'terrario';
 
 const parser = T.alt([
-  T.str('apple'),
-  T.str('orange'),
+  T.token('apple'),
+  T.token('orange'),
 ]);
 ```
