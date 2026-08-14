@@ -25,12 +25,12 @@ TerrarioはTypeScriptとJavaScriptの両方をサポートしています。
 const T = require('terrario');
 
 const number = T.seq([
-  T.str(/[1-9]/),
-  T.str(/[0-9]/).many(0),
+  T.token(/[1-9]/),
+  T.token(/[0-9]/).many(0),
 ]).text().map(x => {
   return parseInt(x);
 });
-const parser = T.sep(number, T.str(','));
+const parser = T.sep(number, T.token(','));
 
 console.log(parser.parse('123,456'));
 console.log(parser.parse('222'));
