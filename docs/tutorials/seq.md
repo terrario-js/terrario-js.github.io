@@ -12,7 +12,7 @@ sidebar_position: 4
 import * as T from 'terrario';
 
 const parser = T.seq([
-  T.str('#'),
+  T.token('#'),
   T.char.many(),
 ]);
 ```
