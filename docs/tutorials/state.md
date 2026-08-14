@@ -7,8 +7,8 @@ sidebar_position: 6
 ```ts
 T.alt([
   T.where(state => state.flag,
-    T.str('a'),
+    T.token('a'),
   ),
-  T.str('b'),
+  T.token('b'),
 ]).state('flag', () => true);
 ```
