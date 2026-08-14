@@ -11,9 +11,9 @@ sidebar_position: 2
 // many.ts
 import * as T from 'terrario';
 
-const parser = T.str('abc').many();
+const parser = T.token('abc').many();
 ```
-まず、`T.str('abc')`でParserクラスのインスタンスを作成しています。  
+まず、`T.token('abc')`でParserクラスのインスタンスを作成しています。  
 そのパーサーを元にして、繰り返し適用するパーサーをmanyメソッドで新たに作成しています。  
 最終的に、parser変数に代入されるParserインスタンスはmanyメソッドで作成されたものとなります。
 
@@ -25,7 +25,7 @@ const parser = T.str('abc').many();
 // many-range.ts
 import * as T from 'terrario';
 
-const parser = T.str('abc').many(2, 4);
+const parser = T.token('abc').many(2, 4);
 // または
-// const parser = T.str('abc').many({ min: 2, max: 4 });
+// const parser = T.token('abc').many({ min: 2, max: 4 });
 ```
